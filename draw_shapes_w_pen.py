@@ -11,13 +11,13 @@ import numpy as np
 from imutils import contours
 from scipy.spatial import distance as dist
 
-DEBUG 			= True
-ST_IDLE 		= 0
-ST_DRAWING 	= 1
-state 			= ST_IDLE
+DEBUG       = True
+ST_IDLE     = 0
+ST_DRAWING  = 1
+state       = ST_IDLE
 pen_strokes = []
-fvs 				= []
-fvs_labels 	= []
+fvs         = []
+fvs_labels  = []
 
 def train():
 	# From a list of images, get the Zernike moments as a feature vector and store in a list
